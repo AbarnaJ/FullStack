@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+    
+</head>
+<body>
+    <div id="headersection">
+    <h1> Online Voting System </h1>  
+    </div>
+    <hr>
+
+    <div id="bodysection">
+    <form action="Voting.html">
+        <h2> Login</h2>
+        <input type ="number" name="mobile" id="num" placeholder="Enter Mobile Number" required><br><br>
+        <input type ="Password" name="Password" id="pass" placeholder="Enter Your Password" required><br><br>
+        
+ <select id="dropbox" name ="role" >
+            <option value="1">Voter</option>
+            <option value="2">Admin</option>
+        </select><br> <br>
+        <button id="loginbtn">Login</button><br><br>
+        New user? <a href="Register.html">Register here</a>
+    </form>
+</div>
+</body>
+</html>

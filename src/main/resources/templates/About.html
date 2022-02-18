@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<style>
+body {
+    margin: 0;
+    background: url('Images/About_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 55px;
+    text-shadow: black 4px 4px;
+    margin-top: 50px;
+}
+
+.box {
+    background: rgba(240, 240, 240, 0.548);
+    width: 45vw;
+    margin: 70px 0px 0px 40px;
+    padding: 5px 15px 10px 15px;
+    font-family: Calibri;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(87, 86, 86) 0px 0px 10px 1px;
+}
+
+@media only screen and (max-width: 728px) {
+    .box {
+        width: 80vw;
+        align-self: stretch;
+        margin-top: 30px;
+        background: rgba(240, 240, 240, 0.856);
+    }
+
+    h1 {
+        font-size: 45px;
+        margin: 40px 20px 20px 0px;
+    }
+}
+</style>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>About</title>   
+</head>
+
+<body>
+    <h1>Online Voting System</h1> 
+    <div class="box">
+   <p>At their core, online voting systems protect the integrity of your vote by preventing voters from being able to vote multiple times. As a digital platform, they eliminate the need to gather in-person, cast votes using paper, or by any other means (e.g. email, insecure survey software).</p>
+   <p>You may hear an online voting system being referred to as an online election system, an online e voting system, or electronic voting. These all make reference to the same thing: a secure voting tool that allows your group to collect input from your group and closely scrutinize the results in real time.</p>
+   </div>
+</body>
+
+</html>

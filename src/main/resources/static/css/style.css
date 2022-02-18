@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+nav{
+    background-color: #500c3f;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 36px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+nav ul li a{
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+     padding:20px
+
+}
+a.active,a:hover{
+    color: #bfca1d;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 31px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.Home{
+	background: url('css/Vote online.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: lavender;
+}
+
+#vote{
+    padding: 10px;
+	border-radius: 15px;
+    background-color: #3498db;
+	color: white;
+	border-radius: 5px;
+    text-align: center;	
+}
+#Ballot{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    background-color:lightgoldenrodyellow;
+  }
+.h{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.image{
+    background-image: url('Vote online.jpg');
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#check{
+    display: none;
+}
+#vote{
+    text-align: center;
+}
+#choices{
+    text-align: center;
+}
+
+@media(max-width:768px) {
+    label.logo{
+        font-size: 31px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 1rem;
+    }
+} 
+@media(max-width:852px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 78px;
+        left: -100%;
+        background-color: #1f2831;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 0;
+        line-height: 41px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background-color: none;
+        color: #a1a321;
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+}

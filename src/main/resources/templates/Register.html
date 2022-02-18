@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+<style>
+#address{
+width: 30%;
+}
+
+#imagepart{
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+width: 30%;
+
+}
+
+#role{
+border: 1px solid black;
+border-radius: 5px;
+padding: 10px;
+width: 30%;
+
+}
+#role select{
+border-radius: 5px;
+padding: 10px;
+
+}
+</style>
+    <div id="headersection">
+    <h1> Online Voting System </h1>
+   
+</div>
+    <hr>
+    <div id="bodysection">
+    <h2>Registration</h2>
+    <form action="Registration Success.html">
+        <input type ="text" name="name" placeholder="Enter Your Name" required>     
+        <input type="number" name="Age" placeholder="Enter your Age" required> <br><br>
+        <input type ="number" name="mobile" placeholder="Enter Mobile Number" required>
+        <input type ="text" name="address" placeholder="Enter Your address" required> <br><br>  
+        <input type ="Password" name="Password" placeholder="Enter Your Password" required> 
+        <input type ="Password" name="cPassword" placeholder="Confirm Password" required><br><br>
+        
+       
+        Upload image:<input type ="file" name="Photo"><br><br>
+        
+        
+        
+        Select role:<select name ="role">
+            <option value="1">Voter</option>
+            <option value="2">Admin</option>
+        </select>
+      
+        
+        <br> <br>
+        <input type="checkbox"  name="terms" id="terms" required />
+        <label for="terms">I Agree the above given informations are true.</label>
+<br><br>
+        <button style="padding: 10px;
+	                   border-radius: 15px;
+	                   background-color: #3498db;
+	                   color: white;
+	                   border-radius: 5px;">
+	                   Register</button><br><br>
+        Already user? <a href="login.html">Login here</a>
+    </form>
+    </div>
+</body>
+</html>
